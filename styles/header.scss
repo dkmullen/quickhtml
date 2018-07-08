@@ -46,17 +46,29 @@
 }
 
 @media screen and (max-width: 550px) {
-    .main-nav {
+    #main-nav {
         position: relative;
         top: 50px;
         float: right;
         right: -48px;
         width: 200px;
+        display: none;
+    }
+
+    .main-nav__items li {
+        background-color: $background-alt;
+    
+        &:nth-child(even) {
+            background-color: $background-alt-darker;
+        }
+
+        &:hover {
+            background-color: $primary-light;
+        }
     }
 
     .main-nav__item {
         display: block;
-        background-color: rgba($background-alt, 0.9);
         margin-right: -11px;
         padding-left: -100px;
         transition: none;
@@ -64,11 +76,6 @@
     
         a {
             color: $text-dark;
-        }
-
-        &:hover {
-            background-color: $primary-light;
-            
         }
 
         &:hover > a {
@@ -81,6 +88,10 @@
         font-size: 48px;
         float: right;
         margin-top: -5px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .main-header__brand {

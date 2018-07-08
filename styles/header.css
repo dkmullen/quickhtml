@@ -41,17 +41,27 @@
 }
 
 @media screen and (max-width: 550px) {
-  .main-nav {
+  #main-nav {
     position: relative;
     top: 50px;
     float: right;
     right: -48px;
     width: 200px;
+    display: none;
+  }
+
+  .main-nav__items li {
+    background-color: #E1E2E1;
+  }
+  .main-nav__items li:nth-child(even) {
+    background-color: #d8dad8;
+  }
+  .main-nav__items li:hover {
+    background-color: #666ad1;
   }
 
   .main-nav__item {
     display: block;
-    background-color: rgba(225, 226, 225, 0.9);
     margin-right: -11px;
     padding-left: -100px;
     transition: none;
@@ -59,9 +69,6 @@
   }
   .main-nav__item a {
     color: #000000;
-  }
-  .main-nav__item:hover {
-    background-color: #666ad1;
   }
   .main-nav__item:hover > a {
     color: #FFFFFF;
@@ -72,6 +79,9 @@
     font-size: 48px;
     float: right;
     margin-top: -5px;
+  }
+  .material-icons.md-48.hamburger:hover {
+    cursor: pointer;
   }
 
   .main-header__brand {
