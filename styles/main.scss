@@ -1,0 +1,39 @@
+@import 'variables.scss';
+
+@import 'reset.css';
+@import 'header.css';
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+#box1 {
+    height: 200px;
+    background-color: $accent;
+    color: $text-dark;
+}
+
+#box2 {
+    height: 200px;
+    background-color: $accent-dark;
+}
+
+#box3 {
+    width: 50%;
+    height: 150px;
+    display: inline-block;
+    background-color: $background-alt;
+    color: $text-light;;
+}
+
+#box4 {
+    width: 50%;
+    height: 150px;
+    display: inline-block;
+    background-color: $primary-light;
+}
